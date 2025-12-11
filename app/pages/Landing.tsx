@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import Link from "next/link";
 
 const Landing = () => {
@@ -32,10 +32,10 @@ const Landing = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <Button variant="hero" size="lg" className="w-full sm:w-auto min-w-[200px]" asChild>
-              <Link to="/signup">Start Your Internship</Link>
+              <Link href="/signup">Start Your Internship</Link>
             </Button>
             <Button variant="heroOutline" size="lg" className="w-full sm:w-auto min-w-[200px]" asChild>
-              <Link to="/login">Member Login</Link>
+                <Link href="/learn-more">Learn More</Link>
             </Button>
           </div>
         </div>
