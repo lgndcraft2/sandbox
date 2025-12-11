@@ -110,14 +110,13 @@ const SignUp = () => {
               <Lock className="w-4 h-4 mr-2" />
               Pay Securely
             </Button>
-            
-            <p className="text-center text-sm text-muted-foreground mt-4">
+          </form>
+          <p className="text-center text-sm text-muted-foreground mt-4">
               Already have an account?{" "}
               <Link href="/login" className="text-primary hover:underline">
                 Login
               </Link>
             </p>
-          </form>
         </AuthCard>
       </div>
     </div>

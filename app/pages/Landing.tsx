@@ -26,8 +26,7 @@ const Landing = () => {
             A gamified, AI-powered job simulation lab that gives you real
             work experience recruiters trust.
           </p>
-
-          {/* CTA Buttons */}
+{/* CTA Buttons */}
           <div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.5s" }}
@@ -36,7 +35,7 @@ const Landing = () => {
               <Link href="/signup">Start Your Internship</Link>
             </Button>
             <Button variant="heroOutline" size="lg" className="w-full sm:w-auto min-w-[200px]" asChild>
-                <Link href="/learn-more">Learn More</Link>
+              <Link href="/login">Member Login</Link>
             </Button>
           </div>
         </div>
