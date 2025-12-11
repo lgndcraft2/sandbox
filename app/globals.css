@@ -92,7 +92,7 @@
   }
 }
 
-/* @layer base {
+@layer base {
   * {
     @apply border-border;
   }
@@ -101,7 +101,7 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
   }
-} */
+}
 
 @layer components {
   .hero-gradient {
