@@ -43,7 +43,7 @@ const Page = () => {
   }, []);
 
   const selectedTrack = tracks.find(t => t.value === track);
-  const subscriptionPrice = selectedTrack?.price || "₦ 17,500";
+  const subscriptionPrice = selectedTrack?.price || "₦ 35,500";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

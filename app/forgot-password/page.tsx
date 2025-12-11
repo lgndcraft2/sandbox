@@ -27,8 +27,6 @@ const ForgotPassword = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <h1 className="text-2xl font-bold text-foreground mb-6">Forgot Password</h1>
-        
         <AuthCard title="Forgot Password" onClose={() => route.push("/login")}>
           <form onSubmit={handleSubmit} className="space-y-4">
             <p className="text-sm text-muted-foreground">
