@@ -15,10 +15,10 @@ const Landing = () => {
         <header className="relative z-10 w-full px-6 py-4">
             <div className="max-w-7xl mx-auto">
               <Link href="/" className="inline-block">
-                <Image src={wdcLogo} alt="WDC Labs" className="h-8" />
+                <Image src={wdcLogo} alt="WDC Labs" className="h-[50px] w-[120px] sm:h-[55px] sm:w-[200px]" />
               </Link>
             </div>
-          </header>
+        </header>
           <div className="w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
         <main className="min-h-screen hero-gradient flex items-center justify-center p-4 sm:p-6 lg:p-8">
           {/* Hero Card */}
