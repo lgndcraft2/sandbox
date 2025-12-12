@@ -31,7 +31,7 @@ const Landing = () => {
             className="absolute right-0 top-1/4 w-1/2 h-2/3 pointer-events-none"
             style={{
               background:
-                "radial-gradient(ellipse at 70% 50%, hsla(0, 0%, 82%, 0.4), transparent 60%)",
+                "radial-gradient(ellipse at 70% 50%, hsl(187 100% 50% / 0.7), transparent 75%)",
               filter: "blur(40px)",
               zIndex: 0,
             }}
