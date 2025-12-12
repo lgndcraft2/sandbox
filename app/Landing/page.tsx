@@ -5,7 +5,13 @@ import Image from "next/image";
 
 const Landing = () => {
   return (
-    <div>  
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      <div 
+        className="absolute top-0 right-0 w-1/2 h-full pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse at 80% 20%, hsl(187 100% 42% / 0.15) 0%, transparent 50%)',
+        }}
+      />
     <header className="relative z-10 w-full px-6 py-4">
         <div className="max-w-7xl mx-auto">
           <Link href="/" className="inline-block">
