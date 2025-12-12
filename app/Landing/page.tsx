@@ -6,12 +6,6 @@ import Image from "next/image";
 const Landing = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      <div 
-        className="absolute top-0 right-0 w-1/2 h-full pointer-events-none"
-        style={{
-          background: 'radial-gradient(ellipse at 80% 20%, hsl(187 100% 42% / 0.15) 0%, transparent 50%)',
-        }}
-      />
         <header className="relative z-10 w-full px-6 py-4">
             <div className="max-w-7xl mx-auto">
               <Link href="/" className="inline-block">
@@ -21,8 +15,27 @@ const Landing = () => {
         </header>
           <div className="w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
         <main className="min-h-screen hero-gradient flex items-center justify-center p-4 sm:p-6 lg:p-8">
+          <div
+            className="absolute right-0 top-1/4 w-1/2 h-2/3 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at 70% 50%, hsl(187 100% 50% / 0.7), transparent 75%)",
+              filter: "blur(40px)",
+              zIndex: 0,
+            }}
+          />
+
           {/* Hero Card */}
           <div className="w-full max-w-4xl card-gradient rounded-2xl p-8 sm:p-12 lg:p-16 card-shadow border border-border/30 animate-scale-in">
+          <div
+            className="absolute right-0 top-1/4 w-1/2 h-2/3 pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at 70% 50%, hsla(0, 0%, 82%, 0.4), transparent 60%)",
+              filter: "blur(40px)",
+              zIndex: 0,
+            }}
+          />
             <div className="text-center space-y-6">
               {/* Headline */}
               <h1 
