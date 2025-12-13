@@ -74,8 +74,8 @@ export default function page() {
         <div className="bg-card border border-border rounded-xl p-5">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4">
             <div className="flex items-start gap-3">
-              <div className="p-2 bg-primary/20 rounded-lg">
-                <FileText className="text-primary" size={20} />
+              <div className="p-2 rounded-lg">
+                <FileText className="text-purple-400" size={20} />
               </div>
               <div>
                 <h2 className="text-lg font-semibold text-foreground">Work and Visa Reference Letters</h2>
@@ -106,7 +106,7 @@ export default function page() {
                   <FileText className="text-muted-foreground" size={20} />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">WORK LETTER OF REFERENCE</p>
+                  <p className="text-sm font-semibold text-foreground/70">WORK LETTER OF REFERENCE</p>
                   <p className="text-xs text-orange-400">Available after 12 weeks</p>
                 </div>
               </div>
@@ -121,8 +121,8 @@ export default function page() {
                   <FileText className="text-muted-foreground" size={20} />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">VISA LETTER OF REFERENCE</p>
-                  <p className="text-xs text-orange-500">Available after 12 weeks</p>
+                  <p className="text-sm font-semibold text-foreground/70">VISA LETTER OF REFERENCE</p>
+                  <p className="text-xs text-orange-400">Available after 12 weeks</p>
                 </div>
               </div>
               <Button size="sm" disabled className="bg-foreground/50 text-primary-foreground/50 cursor-not-allowed blur-[1px]">
@@ -140,10 +140,10 @@ export default function page() {
             {tasks.map((task) => (
               <div key={task.id} className="bg-card border border-border rounded-xl p-4 flex flex-col">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className={`${task.categoryColor} text-white text-xs px-2 py-0.5 rounded`}>
+                  <span className={`${task.categoryColor} text-purple-500 text-xs px-2 py-0.5 rounded`}>
                     {task.category}
                   </span>
-                  <span className={`${task.levelColor} text-white text-xs px-2 py-0.5 rounded ml-auto`}>
+                  <span className={`${task.levelColor} text-purple-500 text-xs px-2 py-0.5 rounded ml-auto`}>
                     {task.level}
                   </span>
                 </div>
