@@ -78,13 +78,13 @@ export default function page() {
                 <FileText className="text-primary" size={20} />
               </div>
               <div>
-                <h2 className="text-lg font-semibold text-primary">Work and Visa Reference Letters</h2>
+                <h2 className="text-lg font-semibold text-foreground">Work and Visa Reference Letters</h2>
                 <p className="text-sm text-muted-foreground mt-1">
                   Maintain your 12-weeks active streak to unlock verified immigration references. Missing a payment resets streak.
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-2 bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap">
+            <div className="flex items-center gap-2 bg-red-500/20 text-orange-400 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap">
               <Flame size={14} />
               14 DAY STREAK
             </div>
@@ -107,7 +107,7 @@ export default function page() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-foreground">WORK LETTER OF REFERENCE</p>
-                  <p className="text-xs text-orange-500">Available after 12 weeks</p>
+                  <p className="text-xs text-orange-400">Available after 12 weeks</p>
                 </div>
               </div>
               <Button size="sm" disabled className="bg-primary/50 text-primary-foreground/50 cursor-not-allowed blur-[1px]">
