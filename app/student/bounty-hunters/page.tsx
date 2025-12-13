@@ -1,6 +1,6 @@
-import { StudentHeader } from "../../components//students/StudentHeader";
+import { StudentHeader } from "../../components/students/StudentHeader";
 
-export const BountyHunter = () => {
+export default function page(){
   return (
     <div className="min-h-screen bg-background">
       <StudentHeader title="Bounty Hunter" />
