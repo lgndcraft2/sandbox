@@ -52,7 +52,7 @@ export const StudentSidebar = () => {
               className={cn(
                 "flex items-center justify-between px-3 py-2.5 rounded-lg transition-colors",
                 isActive 
-                  ? "bg-primary text-primary-foreground" 
+                  ? "bg-primary/20 text-primary" 
                   : "text-sidebar-foreground hover:bg-sidebar-accent"
               )}
             >
