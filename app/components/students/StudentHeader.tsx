@@ -15,10 +15,10 @@ export const StudentHeader = ({ title }: StudentHeaderProps) => {
       <div className="flex items-center gap-3">
         <div className="text-right hidden sm:block">
           <p className="text-sm font-medium text-foreground">Digital Marketing</p>
-          <span className="text-xs bg-purple-600 text-white px-2 py-0.5 rounded">INTERN</span>
+          <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded">INTERN</span>
         </div>
-        <div className="flex items-center gap-2 bg-primary text-primary-foreground px-3 py-1.5 rounded-full">
-          <div className="w-7 h-7 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+        <div className="flex items-center gap-2 bg-primary/20 text-primary-foreground px-3 py-1.5 rounded-full">
+          <div className="w-7 h-7 bg-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
             JS
           </div>
           <span className="text-sm font-medium hidden sm:inline text-foreground">John Snow</span>
