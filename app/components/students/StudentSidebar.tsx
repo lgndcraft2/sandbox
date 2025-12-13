@@ -77,7 +77,7 @@ export const StudentSidebar = () => {
             "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors mt-2",
             pathname === "/student/earn"
               ? "bg-green-500/20 text-green-400"
-              : "text-green-400 hover:bg-green-500/10"
+              : "text-green-400 bg-green-500/20 hover:bg-green-500/10"
           )}
         >
           <DollarSign size={18} />
