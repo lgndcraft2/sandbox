@@ -1,0 +1,15 @@
+import { StudentHeader } from "../../components//students/StudentHeader";
+
+export const GlobalWallet = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <StudentHeader title="Global Wallet" />
+      <div className="p-4 lg:p-6">
+        <div className="bg-card border border-border rounded-xl p-6 text-center">
+          <h2 className="text-lg font-semibold text-foreground mb-2">Global Wallet</h2>
+          <p className="text-muted-foreground">Manage your wallet and transactions.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
