@@ -71,7 +71,7 @@ export const StudentSidebar = () => {
         
         {/* Earn Money - Special styling */}
         <Link
-          href="/student/earn-money"
+          href="/student/earn"
           onClick={() => setMobileOpen(false)}
           className={cn(
             "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors mt-2",
