@@ -84,7 +84,7 @@ export default function page() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-2 bg-red-500/20 text-orange-400 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap">
+            <div className="flex items-center gap-2 bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap">
               <Flame size={14} />
               14 DAY STREAK
             </div>
@@ -93,7 +93,7 @@ export default function page() {
           {/* Progress bar */}
           <div className="mb-4">
             <div className="w-full bg-muted rounded-full h-2">
-              <div className="bg-orange-500 h-2 rounded-full" style={{ width: '45%' }} />
+              <div className="bg-purple-400 h-2 rounded-full" style={{ width: '45%' }} />
             </div>
             <p className="text-xs text-muted-foreground text-right mt-1">12 Weeks Internship</p>
           </div>
@@ -110,7 +110,7 @@ export default function page() {
                   <p className="text-xs text-orange-400">Available after 12 weeks</p>
                 </div>
               </div>
-              <Button size="sm" disabled className="bg-primary/50 text-primary-foreground/50 cursor-not-allowed blur-[1px]">
+              <Button size="sm" disabled className="bg-foreground/50 text-primary-foreground/50 cursor-not-allowed blur-[1px]">
                 <Download size={14} className="mr-1" />
                 Download Letter
               </Button>
@@ -125,7 +125,7 @@ export default function page() {
                   <p className="text-xs text-orange-500">Available after 12 weeks</p>
                 </div>
               </div>
-              <Button size="sm" disabled className="bg-primary/50 text-primary-foreground/50 cursor-not-allowed blur-[1px]">
+              <Button size="sm" disabled className="bg-foreground/50 text-primary-foreground/50 cursor-not-allowed blur-[1px]">
                 <Download size={14} className="mr-1" />
                 Download Letter
               </Button>
