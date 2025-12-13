@@ -21,7 +21,7 @@ export const StudentHeader = ({ title }: StudentHeaderProps) => {
           <div className="w-7 h-7 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
             JS
           </div>
-          <span className="text-sm font-medium hidden sm:inline">John Snow</span>
+          <span className="text-sm font-medium hidden sm:inline text-foreground">John Snow</span>
         </div>
       </div>
     </header>
