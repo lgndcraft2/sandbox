@@ -1,8 +1,17 @@
-export default function Page() {
+import {RecruiterHeader} from "../../components/recruiter/RecruiterHeader";
+
+export default function page(){
   return (
-    <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-foreground">Hiring Preferences</h1>
-      <p className="text-muted-foreground">Preferences settings coming soon.</p>
+    <div className="min-h-screen bg-background">
+      <RecruiterHeader title="Bounty Hunter" />
+      <div className="p-4 lg:p-6">
+        <div className="bg-card border border-border rounded-xl p-6 text-center">
+          <h2 className="text-lg font-semibold text-foreground mb-2">Hiring Preference</h2>
+          <p className="text-muted-foreground">Prefences settings coming soon.</p>
+        </div>
+      </div>
     </div>
   );
 };
+
+
