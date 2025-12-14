@@ -1,6 +1,6 @@
 interface AdminHeaderProps {
   title: string;
-  subtitle?: string;
+  subtitle: string;
 }
 
 export const AdminHeader = ({ title }: AdminHeaderProps) => {
@@ -9,7 +9,7 @@ export const AdminHeader = ({ title }: AdminHeaderProps) => {
       {/* Left side - Title */}
       <div className="lg:ml-0 ml-12">
         <h1 className="text-xl lg:text-2xl font-bold text-foreground">{title}</h1>
-        <p className="text-sm font-medium text-foreground">Digital Marketing</p>
+        <p className="text-sm font-medium text-foreground">{subtitle}</p>
       </div>
 
       {/* Right side - User info */}

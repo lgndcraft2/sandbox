@@ -3,13 +3,13 @@ interface RecruiterHeaderProps {
   subtitle?: string;
 }
 
-export const RecruiterHeader = ({ title }: RecruiterHeaderProps) => {
+export const RecruiterHeader = ({ title, subtitle }: RecruiterHeaderProps) => {
   return (
     <header className="px-4 lg:px-6 py-4 flex items-center justify-between border-b border-border">
       {/* Left side - Title */}
       <div className="lg:ml-0 ml-12">
         <h1 className="text-xl lg:text-2xl font-bold text-foreground">{title}</h1>
-        <p className="text-sm font-medium text-foreground">Digital Marketing</p>
+        <p className="text-sm font-medium text-foreground">{subtitle}</p>
       </div>
 
       {/* Right side - User info */}
