@@ -1,6 +1,7 @@
 "use client";
 import { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Lock, Loader2 } from "lucide-react";
 import { AuthCard } from "../components/auth/AuthCard";
 import { AuthInput } from "../components/auth/AuthInput";
@@ -25,7 +26,7 @@ const tracks = [
 const RECRUITER_PRICE = "₦ 35,500";
 
 const SignUp = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const { signup, isLoading } = useAuth();
   const [role, setRole] = useState<"student" | "recruiter">("student");
   const [fullName, setFullName] = useState("");
@@ -78,7 +79,7 @@ const SignUp = () => {
 
     if (result.success) {
       toast.success("Account created successfully!");
-      navigate(role === "recruiter" ? "/recruiter/talent-market" : "/student/headquarters");
+      router.push(role === "recruiter" ? "/recruiter/talent-market" : "/student/headquarters");
     } else {
       setError(result.error || "Signup failed");
       toast.error(result.error || "Signup failed");
@@ -90,7 +91,7 @@ const SignUp = () => {
       <div className="w-full max-w-md">
         <h1 className="text-2xl font-bold text-foreground mb-6">Sign up</h1>
         
-        <AuthCard title="Join WDC Labs" onClose={() => navigate("/")}>
+        <AuthCard title="Join WDC Labs" onClose={() => router.push("/")}>
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && (
               <div className="bg-destructive/10 border border-destructive/20 text-destructive text-sm p-3 rounded-lg">
@@ -132,7 +133,7 @@ const SignUp = () => {
             
             <p className="text-center text-sm text-muted-foreground mt-4">
               Already have an account?{" "}
-              <Link to="/login" className="text-primary hover:underline">Login</Link>
+              <Link href="/login" className="text-primary hover:underline">Login</Link>
             </p>
           </form>
         </AuthCard>
