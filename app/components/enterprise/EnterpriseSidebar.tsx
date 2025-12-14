@@ -63,7 +63,7 @@ export default function Page(){
       {/* Persona Section */}
       <div className="p-4 mx-3 mb-3 bg-sidebar-accent/50 rounded-lg">
         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Persona</p>
-        <p className="text-foreground font-semibold">Admin</p>
+        <p className="text-foreground font-semibold">Enterprise</p>
       </div>
 
       {/* Logout */}
