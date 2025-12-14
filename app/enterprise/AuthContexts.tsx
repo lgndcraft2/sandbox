@@ -1,3 +1,4 @@
+"use client"
 import React, { createContext, useContext, useState, ReactNode, useEffect } from "react";
 import { toast } from "sonner";
 
@@ -35,7 +36,7 @@ const MOCK_USERS: AuthUser[] = [
   { id: "user-001", fullName: "John Snow", email: "john@gmail.com", role: "student", track: "Digital Marketing", country: "Nigeria" },
   { id: "user-002", fullName: "Admin User", email: "admin@gmail.com", role: "admin" },
   { id: "user-003", fullName: "Recruiter One", email: "recruiter@gmail.com", role: "recruiter" },
-  { id: "user-004", fullName: "Enterprise One", email: "enterprise@gmail.com", role:"enterprise"}
+  { id: "user-004", fullName: "Enterprise One", email: "enterprise@gmail.com", role:"enterprise"},
 ];
 
 const MOCK_PASSWORD = "password123";
