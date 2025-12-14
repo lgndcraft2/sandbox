@@ -1,9 +1,9 @@
-interface StudentHeaderProps {
+interface RecruiterHeaderProps {
   title: string;
   subtitle?: string;
 }
 
-export const StudentHeader = ({ title }: StudentHeaderProps) => {
+export const RecruiterHeader = ({ title }: RecruiterHeaderProps) => {
   return (
     <header className="px-4 lg:px-6 py-4 flex items-center justify-between border-b border-border">
       {/* Left side - Title */}
