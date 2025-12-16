@@ -1,4 +1,5 @@
 import { supabase } from '@/lib/supabase';
+import { supabaseAdmin } from '@/lib/supabase-admin';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
@@ -31,7 +32,10 @@ export async function POST(request: Request) {
     // --- LINKING STEP ---
     // Now insert the profile data into your public table
     if (data.user) {
-      const { error: dbError } = await supabase
+      // Use supabaseAdmin if available to bypass RLS, otherwise fall back to anon client
+      const dbClient = supabaseAdmin || supabase;
+
+      const { error: dbError } = await dbClient
         .from('users')
         .insert({
           // We let the database generate its own primary 'id' (e.g. 1, 2, 3 or uuid)
@@ -48,7 +52,9 @@ export async function POST(request: Request) {
       if (dbError) {
         console.error("Error creating public profile:", dbError);
         // Optional: You might want to delete the auth user here if profile creation fails
-        await supabase.auth.admin.deleteUser(data.user.id);
+        if (supabaseAdmin) {
+          await supabaseAdmin.auth.admin.deleteUser(data.user.id);
+        }
         return NextResponse.json({ success: false, error: "Account created but profile failed. Please contact support." }, { status: 500 });
       }
     }
