@@ -65,8 +65,8 @@ export default function GlobalWallet() {
                   ₦{walletData.balance.toLocaleString()}
                 </h2>
               </div>
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                <Image src="/lucide_shield.png" className="w-12 h-12" width={10} height={10} alt="lucide shield"/>
               </div>
             </div>
 
@@ -102,16 +102,7 @@ export default function GlobalWallet() {
               <div className="flex items-center gap-1">
                <Image src="/first.png" alt="Logo" className="h-5 w-6 object-contain" width={4} height={4}/>
                <Image src="/middle.png" alt="Logo" className="h-5 w-6 object-contain" width={4} height={4}/>
-               <Image src="/lucide_shield.png" alt="Logo" className="h-6 w-6 object-contain" width={4} height={4}/>
-                {/* <div className="w-6 h-6 bg-green rounded-full flex items-center justify-center">
-                  <span className="text-xs text-white font-bold">₦</span>
-                </div>
-                <div className="w-6 h-6 bg-purple rounded-full flex items-center justify-center">
-                  <span className="text-xs text-white font-bold">P</span>
-                </div>
-                <div className="w-6 h-6 bg-cyan rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-3 h-3 text-white" />
-                </div> */}
+               <Image src="/lucide_shield.png" alt="Logo" className="h-5 w-6 object-contain" width={4} height={4}/>
               </div>
             </div>
 
