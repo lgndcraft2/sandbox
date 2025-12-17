@@ -3,7 +3,7 @@ import { useState } from "react";
 import { StudentHeader } from "../../components/students/StudentHeader";
 import { Button } from "../../components/ui/button";
 import { Progress } from "../../components/ui/progress";
-import { Shield, Gift, CheckCircle, Lock, X } from "lucide-react";
+import { Shield, Gift, ShieldCheckIcon, TrendingUp, Lock, X } from "lucide-react";
 import Image from "next/image";
 
 import {
@@ -66,7 +66,7 @@ export default function GlobalWallet() {
                 </h2>
               </div>
               <div className="w-12 h-12 rounded-full flex items-center justify-center">
-                <Image src="/lucide_shield.png" className="w-12 h-12" width={10} height={10} alt="lucide shield"/>
+                <ShieldCheckIcon className="w-12 h-12 text-primary" />
               </div>
             </div>
 
