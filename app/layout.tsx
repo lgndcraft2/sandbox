@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Sonner position="top-right" />
+        <Sonner />
         <Toaster />
         <AuthProvider>
             {children}
